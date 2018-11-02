@@ -1,0 +1,35 @@
+//I will convert this project to Python later
+package testingFiles;
+
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class writingtofile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		//How many digits you want
+		java.text.NumberFormat nf = new java.text.DecimalFormat("00000000");
+
+		try{
+			// MAKE SURE TO CHANGE THIS TO THE DIR OF YOUR TEXT FILE
+			FileWriter out = new FileWriter("/Users/mackensiealvarez/Documents/java_workspace/testingFiles/src/testingFiles/textfile.txt");
+			  
+			int from = 1;      //00000001 - 8
+			int to   = 99999999;   //99999999 - 8 
+			System.out.print("running");
+			for (int i = from; i <= to; i++ ){
+				out.append( nf.format(i) +  "\n");
+			}
+			
+			System.out.print("Done");
+			out.close();
+			
+		}catch(Exception e){
+			
+		}
+		
+	}
+
+}
