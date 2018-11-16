@@ -14,7 +14,7 @@ public class writingtofile {
 
 		try{
 			// MAKE SURE TO CHANGE THIS TO THE DIR OF YOUR TEXT FILE
-			FileWriter out = new FileWriter("/Users/mackensiealvarez/Documents/java_workspace/testingFiles/src/testingFiles/textfile.txt");
+			FileWriter out = new FileWriter("/Users/USERNAME/Documents/java_workspace/testingFiles/src/testingFiles/textfile.txt");
 			  
 			int from = 1;      //00000001 - 8
 			int to   = 99999999;   //99999999 - 8 
